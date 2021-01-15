@@ -1,6 +1,6 @@
 -- La contraseña de los usuarios, es el codUsuario concatenado con el password, en este caso paso. [$usuario . $pass]
 -- Base de datos a usar
-USE DAW215DBProyectoTema5;
+USE DAW214DBProyectoTema5;
 
 -- Introduccion de datos dentro de la tabla creada
 INSERT INTO T02_Departamento(T02_CodDepartamento, T02_DescDepartamento, T02_FechaCreacionDepartamento, T02_VolumenNegocio) VALUES
