@@ -135,6 +135,7 @@ input[readonly=""]{
     font-weight: bold;
     border: 4px solid white;
     margin-right: 6px;
+    cursor: pointer;
 }
 
 .fixed{
@@ -196,7 +197,7 @@ form[name="formularioIdioma"]{
 
 /* MIO */
 
-body, form{
+body{
     background-color: seashell;
 }
 
@@ -215,33 +216,6 @@ input{
     border-radius: 10px;
 }
 
-.select-css{
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: .375rem .75rem;
-    border-radius: .25rem;
-    background-color: #E7E7E7;
-}
-
-.box{
-    padding: 30px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-input[type = submit], input[type = button]{
-    border: 2px solid black;
-    padding: .375rem .75rem;
-    border-radius: .25rem;
-    background-color: #E7E7E7;
-    cursor: pointer;
-    transition: background-color .15s ease-in-out;
-}
-
-input[type = submit]:hover, input[type = submit]:focus, input[type = button]:hover, input[type = button]:focus {
-  color: white;
-  background-color: black;
-}
 
 
 fieldset{
@@ -253,6 +227,7 @@ fieldset{
 
 form{
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 h3{
@@ -261,7 +236,13 @@ h3{
 
 h1{
     background-color: black;
-    margin: 20px auto;
+    margin: 0 auto;
+    color: white;
+}
+
+.inicioSesion{
+    background-color: black;
+    margin-left: 49%;
     color: white;
 }
 
@@ -282,14 +263,7 @@ th{
     font-size: 1.3em;
 }
 
-.volumen{
-    text-align: center;
-}
-
-.acciones{
-    float: right;
-}
-
-.emojis{
-    text-align: center;
+.labelEditar{
+    font-size: 0.7em;
+    margin: 0 auto;
 }

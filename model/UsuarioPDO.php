@@ -17,7 +17,7 @@ class UsuarioPDO{
     }
     
     public static function actualizarUltimaConexion($codUsuario) {
-        $consulta = "Update T01_Usuario set T01_NumConexiones = T01_NumConexiones+1, T01_FechaHoraUltimaConexion=? where T01_CodUsuario=?";
+        $consulta = "Update T01_Usuario set T01_NumConexiones = T01_NumConexiones + 1, T01_FechaHoraUltimaConexion=? where T01_CodUsuario=?";
         $resultado = DBPDO::ejecutaConsulta($consulta, [time(),$codUsuario]);
         return $resultado;
     }

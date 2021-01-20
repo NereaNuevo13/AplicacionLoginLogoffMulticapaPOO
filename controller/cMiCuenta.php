@@ -14,14 +14,6 @@ if (isset($_REQUEST['cerrarSesion'])) { // si se ha pulsado el boton de Cerrar S
     header("Location: index.php"); // redirige al login
     exit;
 }
-
-if (isset($_REQUEST['editarPerfil'])) { // si se ha pulsado el boton de registrarse
-    $_SESSION['paginaEnCurso'] = $controladores['miCuenta']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del registro
-    
-    header('Location: index.php');
-    exit;
-}
-
 $oUsuarioControlador = $_SESSION['usuarioDAW2LoginLogoffMulticapaPOO'];
 
 $numConexiones = $oUsuarioControlador->getNumConexiones(); // variable que tiene el numero de conexiones sacado de la base de datos
@@ -29,7 +21,7 @@ $descUsuario = $_SESSION['usuarioDAW2LoginLogoffMulticapaPOO']->getDescUsuario()
 $ultimaConexion = $_SESSION['usuarioDAW2LoginLogoffMulticapaPOO']->getFechaHoraUltimaConexion();
 $imagenUsuario = $_SESSION['usuarioDAW2LoginLogoffMulticapaPOO']->getImagenPerfil();
 
-$vista = $vistas['inicio'];
+$vista = $vistas['miCuenta'];
 require_once $vistas['layout'];
 
 ?>

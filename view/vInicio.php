@@ -1,5 +1,5 @@
 <header>
-    <h1>Inicio</h1>
+    <h1 class="inicioSesion">Inicio</h1>
     <div class="buttons-header-inicio">
         <!--
         <a href="detalle.php"><button class="button-inicio" name="Detalle"> <?php echo $aLang[$_COOKIE['idioma']]['details']; ?></button></a>
@@ -8,6 +8,7 @@
         <?php echo ($imagenUsuario != null) ? '<img id="fotoPerfil" src = "data:image/png;base64,' . base64_encode($imagenUsuario) . '" alt="Foto de perfil"/>' : "<img id='fotoPerfil' src='webroot/media/imagen_perfil2.png' alt='imagen_perfil'/>" ; ?>
         <form name="logout" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <button class="logout" type="submit" name='cerrarSesion'><?php echo $aLang[$_COOKIE['idioma']]['logoff']; ?></button>
+            <button class="logout" type="submit" name='editarPerfil'><?php echo $aLang[$_COOKIE['idioma']]['editProfile']; ?></button>
         </form>
     </div>
 
