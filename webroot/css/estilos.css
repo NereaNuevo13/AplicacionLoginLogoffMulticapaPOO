@@ -267,3 +267,26 @@ th{
     font-size: 0.7em;
     margin: 0 auto;
 }
+
+#aceptar, #cancelar{
+    margin-top: 50px;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#aceptar{
+    background-color: #EA5656;
+}
+
+#cancelar{
+    background-color: #72BADA;
+}
+
+.articuloEditar{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 30%;
+    padding: 25px;
+}
